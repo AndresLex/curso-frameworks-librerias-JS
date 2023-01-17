@@ -1,0 +1,29 @@
+Qué es Angular y cómo se construyó
+
+Como construyeron Angular
+
+Angular crea componentes mediante los engi moduls o módulos de angular. Son contenedores con componentes y servicios que responden a un mismo fin.
+Los componentes son la interfaz usuario y la lógica para cada pedazo de app.
+Para crear un componente haremos una clase en TypeScript con los métodos necesario para la lógica de nuestro componente.
+En un archivo aparte que parece HTML vamos a definir las etiquetas que iran en nuestro componente.
+Los sevicios son agrupaciones de lógica que se necesitan en varios componentes por toda la app. Esos servicios son inyectados a nuestro componente mediante inyección de dependencias. Podemos hacer esto gracias al uso de TypeScript / POO
+Angular tiene angular Ivy como react tiene a virtual dom
+
+Este logra la renderización utilizando la estrategia incremental DOM.
+Angular tiene su propio “HTML” como react tiene JXS.
+Angular Ivy transforma este “HTML” e instrucciones de JS para renderizar en el DOM.
+Angular dice que es innecesario crear un dom virtual. Con el incremental DOM, cada componente se convierte en ciertas instrucciones y estas instrucciones se ejecutan para renderizar el componente y actualizarlo.
+
+Historia
+
+Por el 2009, dos amigos querían hacer una herramienta para que las personas que no supieran programar pero si HTML pudieran hacer app web. No tuvo existo.
+Mirko se fue a Google. Ahí hace un Google Feedback, una app para enviar feedback.
+Para ello necesitaron 17 mil líneas de código en el frontend y usando Google web tocker para trabajar con Ajax en 6 meses.
+Mirko aposto a su jefe que podría hacer a Google feedback desde cero y en 2 semanas.
+Pero no lo logró, lo hizo en 3 semanas y con 1500 líneas. Así nace Angular.js
+En el 2010 se vuelve open source patrocinado por Google. (Google no depende de angular, Facebook si de react)
+Entre 2012 y 2014 era muy popular. Poder conectar el HTML de un input para conectarlo a un archivo de JS para reaccionar con los usuarios.
+Angular empieza a quedarse atrás de otros Frameworks y el equipo tomo una decisión. Anunciaron la reescritura de angular desde cero. Cambiar totalmente la arquitectura y no sería compatible con la versión anterior. Como se usaba para app grandes, se añadiría por ejemplo componentes.
+Resulta la nueva versión usaba TypeScript, a los 3 meses de angular 2 anunciaron el 4.
+Ahora sale una nueva versión cada 6 meses pero ya no rompe el código.
+Angular tiene todo lo que necesitas en el frontend

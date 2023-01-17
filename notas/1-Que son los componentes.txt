@@ -1,0 +1,33 @@
+Componentes:
+
+Los componentes es aplicar un concepto muy parecido a las funciones pero al maquetar.
+Guardamos bloques de HTML, re utilizarlos y poder construir partes de un sitio.
+Nuestros componentes pueden ser botones , formularios, menú de navegación, etc.
+Un componente solo no sirve, debemos unirnos, ósea composición de elementos, crear componentes con componentes
+
+
+Componente: Parte de código reutilizable y que puede ser modificado según las necesidades de desarrollo
+
+
+Que son los componentes?
+Es un bloque de codigo que ya tiene ciertas características y funcionalidades este debe poder reutilizarse en cualquier parte de nuestra aplicación y poder unirse a otros componentes a esto se le llama Composición, de esta manera podemos crear una gran aplicación basada en nuestros componentes
+
+
+
+Historia
+
+En los 90 aparece HTML.
+En html 2 se trabaja los estilos con el mismo HTML y luego se separó.
+En html 3 empieza la guerra de los navegadores, cada quien con su etiqueta pero hora esta estandarizado
+La guerra continuo en el CSS. Por eso debíamos escribir –webkit, ya se solucionó.
+Lo mismo con JS, muchas cosas se escribían diferente por navegador, y por eso se inventó JQuery. Fue tan i— - Importante porque nos permitía escribir un mismo código JS.
+Microsoft: Inventan el Linux sub system for Windows
+Microsoft: Compro a npm y GitHub.
+Microsoft: Inventa TypeScript.
+El rey de reyes es Google Chrome aunque coma ram infinita.
+El equipo de Google Chrome colabora con otros equipos open source.
+JQuery ahora es inútil siempre será gran herramienta en la historia pues ahora basta con aprender JS para hacer cualquier cosa.
+Cada vez escribimos menos HTML y más JS.
+Podemos reutilizar partes enteras de una página en otra al usar el poder de las funciones.
+Las funciones nos permiten usar un bloque de código las veces que sea necesario sin volverlo a escribir.
+Si deseamos que el bloque de código se comporte diferente hacemos uso de parámetros y estructuras de control.

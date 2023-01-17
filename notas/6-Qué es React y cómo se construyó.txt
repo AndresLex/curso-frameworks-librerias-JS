@@ -1,0 +1,26 @@
+<h3>Objetivos de React</h3>
+Declarativo: Se refiere a que sea fácil de leer.
+Basado en componentes: Que todo este formado por componentes.
+Multiplataforma: Significa que podremos utilizar React en cualquier plataforma con solo pequeños cambios.
+Existe un gran ecosistema de herramientas relacionadas con React, algunas desarrolladas por Facebook y otras por creadas por la comunidad. Por ejemplo:
+
+React DOM: Se utiliza para renderizar los componentes de React en el navegador.
+React Native: Usado generalmente para crear aplicaciones móviles.
+
+
+React js
+Librería open source creada por Facebook.
+
+Características:
+
+Declarativo: Muy fácil de leer.
+
+Componend-based: Un punto fuerte de React es que es basado en componentes.
+
+Multipllataforma: “Learn once, Write anywhere”. Al aprender React, lo podemos utilizar en diferentes plataformas.
+
+Herramientas:
+
+Web: React DOM
+Movil: React Native
+Virtual Reality: React VR

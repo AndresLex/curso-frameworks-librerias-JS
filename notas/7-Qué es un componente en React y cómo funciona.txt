@@ -1,0 +1,28 @@
+Qué es un componente en React y cómo funciona
+
+Cada componente tiene varios “métodos de ciclo de vida” que puedes sobrescribir para ejecutar código en momentos particulares del proceso
+
+Montaje
+Estos métodos se llaman cuando se crea una instancia de un componente y se inserta en el DOM:
+
+constructor()
+static getDerivedStateFromProps()
+render()
+componentDidMount()
+Actualización
+Una actualización puede ser causada por cambios en las props o el estado. Estos métodos se llaman en el siguiente orden cuando un componente se vuelve a renderizar:
+
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+Desmontaje
+Este método es llamado cuando un componente se elimina del DOM:
+
+componentWillUnmount()
+Manejo de errores
+Estos métodos se invocan cuando hay un error durante la renderización, en un método en el ciclo de vida o en el constructor de cualquier componente hijo.
+
+static getDerivedStateFromError()
+componentDidCatch()

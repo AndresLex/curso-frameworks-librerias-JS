@@ -1,0 +1,57 @@
+Reactividad: Es un paradigma, una forma de pensar nuestras aplicaciociones. Deben seguir 2 reglas:
+
+Responsive, es decir, deben ser resilientes (siempre sabe qué hacer) y escalables (no importa con cuánta información debemos trabajar o cuántos usuarios entran a la aplicación, la aplicación debe poder seguir funcionando sin problemas).
+Message Driven (Arquitectura basada en mensajes). Deben de haber emisores y receptores de mensajes. Los mensajes se entregan de manera asíncrona.
+Recuerda: La arquitectura no es ajena a la programación.
+
+Estado: Es el lugar donde vamos a guardar la información reactiva de nuestros componentes. Son variables a las que nos suscribimos para recibir una notificación cada vez que cambian sus valores.
+
+Render: o renderizado, es el proceso por el cual nuestro HTML, pasan a ser información visual en el DOM.
+
+Estrategias de render: Virtual DOM y No Virtual DOM. Ninguna es mejor, depende del caso en particular.
+
+Componente -> Estado -> Render -> Usuario (y vuelve a “Estado”)
+
+
+
+
+Reactividad
+Es un paradigma de programación y sigue dos reglas:
+1. Responsive: Saber reaccionar ante cualquier situación
+2. Message Driven: Arquitectura basada en mensajes.
+
+
+
+
+Responsive: se divide en 2 puntos: resiliente y escalable.
+
+Resiliente: debe saber que hacer ante una mala situación como un error del usuario, un formulario que no responde, etc. y darle solución.
+Escalable: elástico, sin importar la cantidad de información o usuarios, la app debe ser capaz de crecer y seguir trabajando.
+Message driven
+
+Arquitectura basada en mensaje es programar nuestra app con emisores y receptores de mensajes.
+Los mensajes se entregan asincrónicamente y se guardan en una cola a las cuales los receptores se deben suscribir para recibir el mensaje. EL gestionador de colas avisa la llegada del mensaje a los receptores suscriptos a esa cola.
+Internamente para implementar este patrón de suscripción utilizamos observadores. Una librería usada para reactividad es RXS, implementación en JS de reactive.
+Esta arquitectura es cómo funcionan internamente muchos Frameworks de JS para ser reactivo.
+
+
+
+
+
+Es un paradigma, una forma de pensar nuestras aplicaciones de forma que sigan dos reglas o lineamientos.
+
+Responsive: Que sabe reaccionar, las apps responsive saben que hacer sin importar lo que pase, cumplen dos condiciones:
+Ser resilientes: Que nuestra app siempre sabe que hacer incluso en situaciones malas
+Ser escalables: o elásticos, es decir, que no importa con cuanta información tenemos que trabajar o cuantos usuarios entren a la app al mismo tiempo la aplicación debe poder crecer y funcionar sin problemas
+Message Driven: Arquitectura basa en mensajes, consiste en programar nuestras apps con emisores y receptores de mensajes, pero los emisores no entregan directamente los mensajes a los receptores; los mensajes no se entregan sincrónicamente, lo hacen asincrónicamente, se guardan en una cola a la que los receptores se deben suscribir para recibir los mensajes. Para esto se usan observers, una librería muy usada es rx.js, la implementación de reactivex.
+Otros dos conceptos para trabajar la reactividad son:
+
+Estado o State: Aquí se guarda la información reactiva de nuestros componentes, no todos los frameworks lo llaman así pero en esencia son lo mismo, son variables a las que nos suscribimos para recibir una actualización cada vez que cambian sus valores. Podemos manejar un campo de búsqueda o filtrado en una lista de elementos. Con el estado estamos preparados para cuando el usuario solicite la búsqueda nosotros podamos reaccionar.
+
+Render: Es el proceso por el cuál nuestro HTML pasan a ser información visual en el navegador (el DOM), con JS podemos manipular el HTML que ya está en el navegador y cambiarlo dependiendo de las interacciones de nuestros usuarios.
+
+Estrategias de render:
+
+Virtual DOM: Puede decirse que es la más popular, es una copia del DOM en JS. Leer, comparar y modificar el DOM directamente es muy costoso. Cada vez que hay un render creamos una copia del DOM en JS, así cuando evaluemos en un futuro que componentes debemos volver a renderizar, no tenemos que ir al DOM, lo hacemos con el virtual DOM que es mucho más rápido y cuando ya sabemos cuales debemos de renderizar le volvemos a hacer render directo al DOM, haciendo la app más rápida.
+No Virtual DOM: El virtual DOM es un “paso extra” y es innecesario según este approach. Lo que proponen es crear un mini virtual DOM específicamente para el componente que se quiere modificar.
+Estas son las que usan los frameworks así que debemos elegir el que más se adapte a nuestro proyecto.

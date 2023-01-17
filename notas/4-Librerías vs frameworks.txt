@@ -1,0 +1,23 @@
+Frameworks:
+    Es un marco de trabajo que contiene librerias y herramientas que ayudaran a 
+    construir algo mas rapido garantizando calidad gracias a una metodologia y 
+    estructura de trabajo bien definidas
+
+Libreria:
+    Es un fragmento de codigo que ayudara a resolver un problema especifico
+    y que tiene un proposito concreto.
+
+
+
+
+Framework: Una manera de trabajar y hacer las cosas, incluye librerías.
+
+Librería: Un código que tiene una función muy en particular.
+
+
+
+Como yo lo entiendo:
+
+Librería: Es un conjunto de piezas de código y herramientas para un fin en específico. Un ejemplo de esto sería una caja de destornilladores con diferentes tamaños y puntas.
+
+Framework: Es un grupo mayor de librerías y herramientas para construir proyectos más complejos de forma efectiva. Ejemplo: una sala de herramientas con todo lo necesario para construir tu casa,
