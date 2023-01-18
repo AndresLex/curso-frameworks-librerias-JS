@@ -1,0 +1,17 @@
+QUE ES SVELTE Y COMO SE CONSTRUYÓ
+Rich Harris creó SVELTE
+
+La principal característica es que no crea intermediarios entre el código que se escribe en SVELTE y el DOM.
+A diferencia de React, SVELTE no usa el VirtualDOM.
+SVELTE es Espectacular para desarrollar sitios WEB
+SVELTE No es tan fuerte en Aplicaciones WEB
+ARQUITECTURA DE SVELTE:
+No hay un recurso oficial que nos explique como funciona SVELTE por dentro.
+Dustin Deus: escribió un issue acerca de la Documentación:
+Resumen del Resumen del Resumen :0
+1.- SVELTE es un Compilador, por tanto, necesita generar un AST(Abstract Syntax Tree), adjunto clase del curso profesional de JavaScript Acerca de ello: Clase
+2.- Para esto necesita 3 Parsers: HTML, CSS, y JavaScript
+COMBINA ESTOS 3 ARBOLES.
+3.- Envuelve como un envoltura de chocolate 😄, todos los componentes en FRAGMENTS, Una interfaz API del Navegador.
+4.- Esa interfaz sirve para ENCAPSULAR: Nodos, y pedazos del DOM, esto no afecta la interfaz de la Página.
+5.- Los FRAGMENTS es como un nodo imaginario(No es visible para los usuarios), pero si tiene todos las características de un nodo.(Crear, Actualizar, Borrar)

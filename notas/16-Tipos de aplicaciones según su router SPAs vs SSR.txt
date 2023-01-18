@@ -1,0 +1,29 @@
+Tipos de aplicaciones según su router: SPAs vs. SSR
+
+Antes de las aplicaciones web modernas se usaba el SSR “viejo” (Server Side Rendering), con el que el backend usaba una plantilla de HTML le daba a la plantilla los datos específicos requeridos en cada petición y le enviaba el HTML al navegador. Está forma de hacer render es rápida solo al principio porque el backend no le entrega al navegador la forma de interactuar con los usuarios
+
+SPAs y CSR
+
+Single Page Applications: Se inventa el Client Side Routing aquí gracias en parte a las API’s se empezó a renderizar el contenido desde JS directamente en el navegador. Es decir, el backend le entregaba al navegador un HTML prácticamente vacío, que tenía solo la petición de un script o alguna hoja de estilos. Entonces el navegador recibía el HTML en blanco, descargaba el JS y CSS y entonces JS podía empezar a renderizar la aplicación, entonces la carga inicial es lentísima, pero luego se hace bastante rápida, no necesita recargarse y cuando requiere información del backend solo hace la consulta a una API (que son fundamentales para estas aplicaciones).
+
+Para trabajar de esta forma tenemos dos componentes:
+
+Los routers son herramientas para manejar las rutas de nuestra aplicación, normalmente de eso se encargaría el servidor.
+
+Si no se tiene control servidor se usa
+
+Hash Router: Con “#” definimos en que parte de la aplicación estamos (en el home, logout, clientes, admin, etc.).
+Si tienes control sobre el servidor
+
+Browser Router: Sin importar la ruta puedes pedirle al servidor que siempre de el mismo index.html, y con JS podemos determinar en que ruta estamos y que ruta debemos mostrar dependiendo de la ruta que nos dio el servidor o navegaron e interactuaron los usuarios.
+Progressive SSR
+
+Gracias al CSR de la SPA se invento el SSR (Server Side Rendering combinado con Client Side Rendering).
+
+En lugar de mandar un documento HTML vacío al navegador y tardara mucho en descargarlo, se podía acelerar el proceso, desde el backend enviamos al navegador una versión de la aplicación en HTML que los usuarios puedan ver mientras el navegador descarga los archivos de JS y vuelve a hacer render de la aplicación. Entonces, el backend le envía al navegador una versión de la app que solo se puede ver pero no tocar, es decir, los usuarios no pueden interactuar inmediatamente con la app.
+
+NOTA: Para esto se necesita Node.js.
+
+Generación de Sitios Estáticos
+
+Estos generadores nos permiten usar el Progressive SSR mientras estamos desarrollando el sitio, pero cuando lo compilamos nos generan páginas estáticas que ya tienen cargados los datos que normalmente le pediríamos al backend y cuando hacemos deploy las aplicaciones funcionan de una. Si hay algún dato que nos daba el servidor pero que sabemos que casi no va a cambiar (como un blogpost) podemos volver a hacer deploy si queremos editar el contenido no habrá problema alguno.

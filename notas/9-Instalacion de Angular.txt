@@ -1,0 +1,63 @@
+RESUMEN:
+
+VERIFICAR VERSIÓN DE NODE
+-> node -v
+-> node --version
+
+VERIFICAR VERSIÓN DE NPM
+-> npm -v
+-> npm --version
+
+INSTALAR EL CLIENTE DE COMANDOS DE ANGULAR
+-> npm i -g @angular/cli
+
+VERIFICAR VERSIÓN DE ANGULAR CLI
+-> ng version
+
+CREAR TU PRIMER APLICACIÓN
+-> ng new my-store
+
+EJECUTAR UN SERVIDOR PARA VER NUESTRO PROYECTO
+-> ng serve
+
+
+Si tenemos algun problema con el cli podemos desistalar e instalar
+
+> npm uninstall -g @angular/cli
+> npm cache verify
+> npm install -g @angular/cli@latest
+> ng version
+
+
+
+Instalación de Angular CLI
+
+Para comenzar con Angular, en primer lugar, se requiere tener instalado en tu computador NodeJS y NPM. Puedes verificar dicha instalación con el comando node -v y npm -v.
+
+TIP: Se recomienda utilizar siempre versiones pares de NodeJS (10, 12, 14) ya que a estas se les darán mantenimiento a lo largo de muchos años.
+
+Comienza instalando el CLI de Angular con el comando npm install -g @angular/cli. Nótese el -g que indica que instalaremos Angular de manera global en tu computador para la posterior creación de tu primer proyecto.
+
+Pero… ¿Qué es un CLI?
+CLI son las siglas de Common Line Interface o Interfaz de Línea de Comandos. Son programas para darle ordenes al computador y ejecutar tareas y procesos a través de comandos de texto.
+
+Luego de la instalación del Angular CLI, puedes utilizar ng version para corroborar la versión instalada de Angular (actualmente v13). Angular lanza una nueva versión cada 6 meses introduciendo mejoras. No debes preocuparte por utilizar una o varias versiones detrás de la actual. Las versiones de Angular son totalmente compatibles entre sí y no tendrá problemas tu aplicación.
+
+Tu primer proyecto
+Para crear tu primer proyecto, basta con el comando ng new myFirstProject. El CLI de Angular te realizará las siguientes preguntas:
+
+Would you like to add Angular routing?Which stylesheet format would you like to use?
+
+Primero pregunta si deseas emplear Angular Routing para la creación de rutas en tu aplicación. Se recomienda contestar siempre Yes, ya que, rara vez, una app no tendrá rutas. La segunda pregunta que realiza es si se desea utilizar un preprocesador de CSS pudiendo escojer entre SCSS, SASS, LESS o no utilizar un preprocesador. Se recomienda utilizar SCSS ya que es el más utilizado en la industria.
+
+Luego de la creación de tu primer proyecto (puede demorar unos minutos en crearse) es hora de correr el servidor de desarrollo que Angular trae para hacer pruebas.
+
+Ingresamos al directorio de nuestro proyecto:
+
+cd myFirstProject
+
+Y lanzamos el servidor de desarrollo con:
+
+ng serve
+
+Este comando preparará la aplicación para un entorno de desarrollo, no debe usarse en entornos productivos. Si ingresamos a localhost:4200/ podrás observar tu primera aplicación de Angular.

@@ -1,0 +1,22 @@
+Tipos de organización de carpetas
+
+-File Type First: Carpeta por cada tipo de archivos.
+-Feature First: Una carpeta para cada feature.
+-Apps for apps: Una carpeta para cada aplicacion.
+
+organizo mis proyectos de la siguiente manera, los componentes contienen dos directorios los ui-elements que son los elementos que estarán construyendo nuestro proyecto a través de los widget es donde armamos componentes que incorporan mas de un ui-element, una vez ready esto simplemente tomamos nuestros widget y vamos armando nuestro rompe cabezas en el directorio de view
+
+src
+    components
+        Ui-Elements
+            Button.js
+            Input.js
+            Select.js
+        Widget  
+            Modal
+            Login
+            Navbar
+    View
+        Login
+        Register
+        Dashboard
